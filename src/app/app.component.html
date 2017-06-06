@@ -1,3 +1,3 @@
 <agm-map [latitude]="center.lat" [longitude]="center.lng" [zoom]="zoom">
-  <agm-data-layer [geoJson]="geoJsonObject" (layerClick)="clicked($event)" [style]="styleFunc"></agm-data-layer>
+  <agm-data-layer *ngIf="geoJsonObject" [geoJson]="geoJsonObject" (layerClick)="clicked($event)" [style]="styleFunc"></agm-data-layer>
 </agm-map>
