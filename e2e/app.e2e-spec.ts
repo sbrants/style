@@ -7,8 +7,8 @@ describe('style App', () => {
     page = new StylePage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display a map with zoom level 4', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getMap().getAttribute('ng-reflect-zoom')).toEqual('4');
   });
 });

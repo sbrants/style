@@ -5,7 +5,7 @@ export class StylePage {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  getMap() {
+    return element(by.css('app-root agm-map'));
   }
 }
